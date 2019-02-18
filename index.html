@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>HoneyBee - Admin Dashboard</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,800' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/admin-dashboard.css">
+
+</head>
+
+<body>
+  <nav class="navbar flex-md-nowrap pb-2 pt-3">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
+      <img src="assets/imgs/honeybee-logo.png" alt="">
+    </a>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-3 col-lg-2 d-none d-md-block bg-light admin-sidebar__nav-pd sidebar">
+        <div class="sidebar-sticky admin-sidebar">
+          <ul class="nav flex-column admin-sidebar__u-list">
+            <li class="nav-item admin-sidebar__item">
+              <a class="nav-link active" href="index.html">
+                <img src="assets/imgs/home--active.svg" alt=""><span>Home</span>
+              </a>
+            </li>
+            <li class="nav-item admin-sidebar__item">
+              <a class="nav-link" href="manage-employees.html">
+                  <img src="assets/imgs/manage-employees.svg" alt=""><span>Manage Employees</span>
+              </a>
+            </li>
+            <li class="nav-item admin-sidebar__item">
+              <a class="nav-link" href="loan-records.html">
+                <img src="assets/imgs/loan-records.svg" alt=""><span>Loan Records</span>
+              </a>
+            </li>
+            <li class="nav-item admin-sidebar__item">
+              <a class="nav-link" href="support.html">
+                <img src="assets/imgs/support.svg" alt=""><span>Support</span>
+              </a>
+            </li>
+
+            <li class="nav-item admin-sidebar__item--logout">
+              <a class="nav-link" href="#">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main role="main" class="col-md-9 col-lg-10 ml-sm-auto col-lg-10 pt-3 px-4">
+        <div class="container-fluid" style="">
+          <div class="row">
+            <div class="col-sm-9 title-block">
+              <h3 class="title-block__header">Welcome back, John!</h3>
+              <p class="title-block__subcopy">Important: Bee sure to report any employee terminations.</p>
+            </div>
+            <div class="col-sm-3 company-block text-right">
+              <h3 class="company-block__company-name">Smith Industries</h3>
+              <p class="company-block__company-code">Company Code: 1234567</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid mt-3">
+          <div class="jumbotron yellow-bk">
+            <div class="col-sm-10">
+              <h2 class="mb-3">Congratulations! Your employees saved a total of <strong>$45,043</strong> to date by using HoneyBee instead of taking out payday loans!</h2>
+              <div class="row">
+                <div class="col-sm-6">
+                  <a class="btn button__primary" href="../../components/navbar/" role="button">2 pending verifications</a>
+                </div>
+                <div class="col-sm-6">
+                  <a class="btn button__primary" href="../../components/navbar/" role="button">Report terminations</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid mt-5">
+          <div class="row">
+            <div class="col-sm-10">
+              <h3>Honeybee Insights</h3>
+              <p>Last update: <span>Sept 1, 2019</span></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="honeycomb-bk">
+                <h2>$45,000.00</h2>
+              </div>
+              <p><strong>Total credit</strong> extended to workforce by HoneyBee</p>
+            </div>
+            <div class="col-md-4">
+              <div class="honeycomb-bk">
+                <h2>$3,600.00</h2>
+              </div>
+              <p><strong>Average loan</strong> amount extended to workforce</p>
+            </div>
+            <div class="col-md-4">
+              <div class="honeycomb-bk">
+                <h2>15</h2>
+              </div>
+                <p><strong>Number of loans</strong> extended to workforce by Honeybee</p>
+            </div>
+          </div>
+<br>
+<br>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="honeycomb-bk">
+                <h2>$25,000.00</h2>
+              </div>
+              <p><strong>Saved</strong> when compared to a payday lender</p>
+            </div>
+            <div class="col-md-4">
+              <div class="honeycomb-bk">
+                <h2>3.5%</h2>
+              </div>
+                <p>Average % of <strong>loan vs salary</strong> per employee</p>
+            </div>
+            <div class="col-md-4">
+              <div class="honeycomb-bk">
+                <h2>30.0%</h2>
+              </div>
+                <p><strong>Repeat borrowers</strong> within your workforce</p>
+            </div>
+          </div>
+        </div>
+
+<br>
+<br>
+<br>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-10">
+              <h3>Reasons for Loans</h3>
+              <p>Average across 15 loans</p>
+            </div>
+          </div>
+          <div class="row"></div>
+        </div>
+
+        <footer>
+          <div class="container-fluid px-0 py-5">
+            <div class="row">
+              <div class="col-md-6">
+                <h6>© 2018 Honeybee Financial. All rights reserved.</h6>
+              </div>
+              <div class="col-md-6 text-right">
+                <a href="#">Privacy Policy </a>
+                <span> | </span>
+                <a href="#">Linkedin </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </div>
+</body>
+<!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+</html>
