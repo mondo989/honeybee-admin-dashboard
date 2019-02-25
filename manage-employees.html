@@ -18,7 +18,6 @@
       <img src="assets/imgs/honeybee-logo.png" alt="">
     </a>
   </nav>
-
   <div class="container-fluid">
     <div class="row">
       <nav class="col-md-3 col-lg-2 d-none d-md-block bg-light admin-sidebar__nav-pd sidebar">
@@ -48,32 +47,35 @@
                 <span>Support</span>
               </a>
             </li>
-
             <li class="nav-item admin-sidebar__item--logout">
               <a class="nav-link" href="#">Log Out</a>
             </li>
           </ul>
         </div>
       </nav>
-
       <main role="main" class="col-md-9 col-lg-10 ml-sm-auto col-lg-10 pt-3 px-4">
-        <div class="container-fluid">
+        <div class="container-fluid page-header__margin-fix">
           <div class="row">
             <div class="col-sm-8 title-block">
               <h3 class="title-block__header">Manage Employees</h3>
               <p class="title-block__subcopy">Confirm new employees and terminate existing ones</p>
             </div>
-
             <div class="col-sm-4 company-block text-right">
               <h3 class="company-block__company-name">Smith Industries</h3>
               <p class="company-block__company-code">Company Code: 1234567</p>
             </div>
           </div>
         </div>
-
-        <div class="row mt-4">
+        <div class="row container-fluid mt-3 pl-4">
           <div class="col-md-9">
-            <div class="row">
+            <div class="row mb-3">
+              <div class="search-employees">
+                <h3>Search Employees</h3>
+                <input type="text" class="search-employees__input mt-1" placeholder="Search by First or Last Name">
+                <button type="button" name="button" class="search-employees__button"></button>
+              </div>
+            </div>
+            <div class="row mt-4">
               <h3>Pending employees <span>(0)</span></h3>
               <table class="table table-striped rounded-container">
                 <thead class="thead-light">
@@ -94,7 +96,6 @@
                 </tbody>
               </table>
             </div>
-
             <div class="row mt-3">
               <h3>Confirmed employees <span>(5)</span></h3>
               <table class="table table-striped rounded-container">
@@ -142,7 +143,6 @@
                 </tbody>
               </table>
             </div>
-
             <div class="row mt-3">
               <h3>Terminated employees <span>(1)</span></h3>
               <table class="table table-striped rounded-container">
@@ -183,11 +183,7 @@
               </table>
             </div>
           </div>
-          <div class="col-md-3 faq-sidebar">
-            <div class="row faq-sidebar__img-container">
-              <img src="" alt="">
-            </div>
-
+          <div class="col-md-3 faq-sidebar mt-4">
             <div class="support-video__item mb-5">
               <img src="assets/imgs/computer.png" class="support-video__item--thumbnail" alt="">
               <div class="support-video__item--content">
@@ -197,7 +193,6 @@
                 </a>
               </div>
             </div>
-
             <h5>FAQ'S</h5>
             <div class="rounded-container faq-container--sidebar">
               <a href="#">How do I sign up a new employee?</a>
@@ -205,7 +200,6 @@
             </div>
           </div>
         </div>
-
         <footer>
           <div class="container-fluid px-0 py-5">
             <div class="row">
