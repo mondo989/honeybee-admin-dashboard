@@ -17,6 +17,7 @@ body {
 a {
   color: $primary-blue;
 }
+
 /////// elemenets
 .admin-sidebar {
   li {}
@@ -88,7 +89,7 @@ a {
     float: left;
     font-size: 14px;
     font-weight: 600;
-    max-width: 100px;
+    max-width: 75px;
   }
 
   .active {

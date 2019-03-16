@@ -53,7 +53,7 @@ a {
     float: left;
     font-size: 14px;
     font-weight: 600;
-    max-width: 100px; }
+    max-width: 75px; }
   .admin-sidebar__item .active {
     color: #16181E; }
     .admin-sidebar__item .active span {
