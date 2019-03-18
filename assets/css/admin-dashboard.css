@@ -1,3 +1,10 @@
+@media (max-width: 1350px) {
+  .navbar-brand img {
+    max-width: 140px; } }
+@media (max-width: 991px) {
+  .navbar-brand img {
+    min-width: initial; } }
+
 body {
   font-family: "Montserrat", sans-serif; }
 
@@ -42,6 +49,9 @@ a {
       left: -20px;
       top: 0;
       content: ""; }
+  @media (max-width: 768px) {
+    .admin-sidebar__u-list {
+      margin-top: 0; } }
 
 .admin-sidebar__item {
   margin: 10px 0; }
@@ -64,9 +74,18 @@ a {
   bottom: 80px; }
   .admin-sidebar__item--logout a {
     font-weight: 600; }
+  @media (max-width: 768px) {
+    .admin-sidebar__item--logout {
+      position: relative;
+      bottom: 0;
+      margin-top: 10px;
+      margin-bottom: 30px; } }
 
 .yellow-bk {
   background: #FFF9EF; }
+  @media (max-width: 991px) {
+    .yellow-bk h2 {
+      font-size: 1.4rem; } }
 
 main {
   height: 95vh; }
@@ -125,6 +144,10 @@ table {
   font-weight: 500;
   padding: 5px .75rem; }
 
+.table .thead-light .thead-nocontent {
+  background: white;
+  padding: 15px 0; }
+
 .table-striped tbody tr:nth-of-type(odd) {
   background: white; }
 
@@ -155,6 +178,9 @@ h4 {
 
 .page-header__margin-fix {
   margin-top: -45px; }
+  @media (max-width: 768px) {
+    .page-header__margin-fix {
+      margin-top: 0; } }
 
 .rounded-container {
   border: 1px solid #DCE0E7;
