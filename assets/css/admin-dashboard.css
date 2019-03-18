@@ -33,6 +33,10 @@ a {
   height: 130vh;
   width: 100%;
   z-index: -1; }
+  @media (max-width: 768px) {
+    .admin-sidebar__nav-pd:before {
+      top: 0;
+      height: auto; } }
 
 .admin-sidebar__u-list {
   margin-top: 50px; }
@@ -144,7 +148,7 @@ table {
   font-weight: 500;
   padding: 5px .75rem; }
 
-.table .thead-light .thead-nocontent {
+.table .thead-nocontent th {
   background: white;
   padding: 15px 0; }
 
@@ -185,7 +189,7 @@ h4 {
 .rounded-container {
   border: 1px solid #DCE0E7;
   box-shadow: 0 4px 6px 0 rgba(176, 186, 197, 0.2);
-  border-radius: 6px; }
+  border-radius: 6px !important; }
 
 .loan-agreement__block {
   display: inline-block;
@@ -405,5 +409,9 @@ h4 {
 
 .loan-reason__item--type {
   padding-left: 7.5px; }
+
+.page-item.active .page-link {
+  background: #F99C10;
+  border-color: #F99C10; }
 
 /*# sourceMappingURL=admin-dashboard.css.map */

@@ -32,13 +32,13 @@
             <li class="nav-item admin-sidebar__item">
               <a class="nav-link active" href="manage-employees.html">
                 <img src="assets/imgs/manage-employees--active.svg" alt="">
-                <span>Manage Employees</span>
+                <span>Manage employees</span>
               </a>
             </li>
             <li class="nav-item admin-sidebar__item">
               <a class="nav-link" href="loan-records.html">
                 <img src="assets/imgs/loan-records.svg" alt="">
-                <span>Loan Records</span>
+                <span>Loan records</span>
               </a>
             </li>
             <li class="nav-item admin-sidebar__item">
@@ -57,7 +57,7 @@
         <div class="container-fluid page-header__margin-fix">
           <div class="row">
             <div class="col-sm-8 title-block">
-              <h3 class="title-block__header">Manage Employees</h3>
+              <h3 class="title-block__header">Manage employees</h3>
               <p class="title-block__subcopy">Confirm new employees and terminate existing ones</p>
             </div>
             <div class="col-sm-4 company-block text-right">
@@ -70,13 +70,13 @@
           <div class="col-md-9">
             <div class="row mb-3">
               <div class="search-employees">
-                <h3>Search Employees</h3>
+                <h3>Search employees</h3>
                 <input type="text" class="search-employees__input mt-1" placeholder="Search by First or Last Name">
                 <button type="button" name="button" class="search-employees__button"></button>
               </div>
             </div>
             <div class="row mt-4">
-              <h3>Pending employees <span>(1)</span></h3>
+              <h3>Pending employees <span id="pendingEmployeesNumber">(1)</span></h3>
               <table class="table table-striped rounded-container">
                 <thead class="thead-light">
                   <tr class="lt-gray">
@@ -94,12 +94,12 @@
                     <td>@mdo</td>
                   </tr>
                 </tbody>
-                <tr class="thead-light">
-                  <th class="text-center thead-nocontent" colspan="4">You have 0 pending employee confirmations. </th>
-                </tr>
+                <!-- <tr class="thead-light thead-nocontent">
+                  <th class="text-center" colspan="4">You have 0 pending employee confirmations. </th>
+                </tr> -->
               </table>
             </div>
-            <nav aria-label="Pending Employees">
+            <!-- <nav aria-label="Pending Employees">
               <ul class="pagination justify-content-end">
                 <li class="page-item disabled">
                   <a class="page-link" href="#" tabindex="-1">Previous</a>
@@ -110,9 +110,9 @@
                   <a class="page-link" href="#">Next</a>
                 </li>
               </ul>
-            </nav>
+            </nav> -->
             <div class="row mt-3">
-              <h3>Confirmed employees <span>(5)</span></h3>
+              <h3>Confirmed employees <span id="confirmedEmployeesNumber">(6)</span></h3>
               <table class="table table-striped rounded-container">
                 <thead class="thead-light">
                   <tr>
@@ -155,6 +155,17 @@
                       <a href="#">Report Termination</a>
                     </td>
                   </tr>
+                  <tr>
+                    <th>Nancy</th>
+                    <td>Douglass</td>
+                    <td>Apr 02 2018</td>
+                    <td>
+                      <a href="#">Report Termination</a>
+                    </td>
+                  </tr>
+                  <!-- <tr class="thead-light thead-nocontent">
+                    <th class="text-center" colspan="4">You have 0 employees confirmed. </th>
+                  </tr> -->
                 </tbody>
               </table>
             </div>
@@ -163,7 +174,7 @@
                 <li class="page-item disabled">
                   <a class="page-link" href="#" tabindex="-1">Previous</a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                 <li class="page-item">
                   <a class="page-link" href="#">Next</a>
@@ -207,6 +218,15 @@
                     <td>Apr 02 2018</td>
                     <td></td>
                   </tr>
+                  <tr>
+                    <th>Nancy</th>
+                    <td>Douglass</td>
+                    <td>Apr 02 2018</td>
+                    <td></td>
+                  </tr>
+                  <!-- <tr class="thead-light thead-nocontent">
+                    <th class="text-center" colspan="4">You have 0 terminated employees. </th>
+                  </tr> -->
                 </tbody>
               </table>
             </div>
@@ -215,7 +235,7 @@
                 <li class="page-item disabled">
                   <a class="page-link" href="#" tabindex="-1">Previous</a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                 <li class="page-item">
                   <a class="page-link" href="#">Next</a>
