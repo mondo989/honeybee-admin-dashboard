@@ -68,13 +68,30 @@
         </div>
         <div class="row container-fluid mt-3 pl-4">
           <div class="col-md-9">
-            <div class="row mb-3">
+            <div class="row">
               <div class="search-employees">
                 <h3>Search employees</h3>
-                <input type="text" class="search-employees__input mt-1" placeholder="Search by First or Last Name">
-                <button type="button" name="button" class="search-employees__button"></button>
+                <div class="search-employees__row">
+                  <input type="text" class="search-employees__input" placeholder="Search by First or Last Name">
+                  <button type="button" name="button" class=" clear search-employees__button"></button>
+                  <a class="search-employees__clear-all" href="#">Clear All</a>
+                </div>
               </div>
             </div>
+
+            <div class="row mb-1">
+              <div class="item-searched__row">
+                <div class="item-searched__button">
+                  <span class="item-searched__content">Michael</span>
+                  <img class="item-searched__close-icon" src="assets/imgs/close-icon.svg" alt="Close Icon">
+                </div>
+                <div class="item-searched__button">
+                  <span class="item-searched__content">Doug</span>
+                  <img class="item-searched__close-icon" src="assets/imgs/close-icon.svg" alt="Close Icon">
+                </div>
+              </div>
+            </div>
+
             <div class="row mt-4">
               <h3>Pending employees <span id="pendingEmployeesNumber">(1)</span></h3>
               <table class="table table-striped rounded-container">
